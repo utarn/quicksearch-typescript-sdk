@@ -51,7 +51,7 @@ const DEFAULTS = {
  */
 export default async function quickSearchTransport(
   options: QuickSearchTransportOptions
-): Promise<Transform & { end: () => Promise<void> }> {
+) {
   // Validate required options
   if (!options.serverUrl) {
     throw new Error('serverUrl is required');
