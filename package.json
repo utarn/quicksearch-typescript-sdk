@@ -1,0 +1,45 @@
+{
+  "name": "quicksearch-pino-transport",
+  "version": "1.0.0",
+  "description": "Pino transport for QuickSearch logging server",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "example": "npx tsx examples/basic-usage.ts",
+    "lint": "eslint src tests",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pino",
+    "transport",
+    "logging",
+    "quicksearch",
+    "structured-logging"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "pino-abstract-transport": "^2.0.0"
+  },
+  "peerDependencies": {
+    "pino": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
