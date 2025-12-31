@@ -1,6 +1,6 @@
 {
   "name": "quicksearch-pino-transport",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Pino transport for QuickSearch logging server",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -26,7 +26,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/utarn/quicksearch-typescript-sdk.git"
+    "url": "https://github.com/utarn/quicksearch-typescript-sdk"
   },
   "dependencies": {
     "pino-abstract-transport": "^2.0.0"
